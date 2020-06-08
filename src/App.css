@@ -3,10 +3,15 @@
 }
 .search-form {
 	height: 20vh;
+	width: 100vw;
+	z-index: 100;
 	background-color: black;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	position: fixed;
+	left: 0px;
+	top: 0px;
 }
 
 .search-movie {
@@ -27,6 +32,7 @@
 }
 
 .Container {
+	margin-top: 20vh;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
