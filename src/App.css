@@ -37,7 +37,7 @@
 }
 
 .movie-card {
-	width: 40%;
+	min-width: 40%;
 	background-color: antiquewhite;
 	border-radius: 25px;
 	display: flex;
