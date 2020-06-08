@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Metal Mania', cursive;
+	margin: 0px;
+	padding: 0px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+body {
+	background: #4b6cb7;
+	background: linear-gradient(to right, #182848, #4b6cb7);
+}
