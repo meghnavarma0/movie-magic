@@ -9,7 +9,7 @@ Simple Movie Searching App Created In React. Uses a Movie API to Display Searche
 - Responsive Design.
 
 ### ScreenShot
- <img src="/ss/1.png" height="500px"></img>
+<img src="https://i.ibb.co/H4DtvCN/2.jpg" alt="screenshot" height="500">
  
 ### App Link:
 - Hosted on [Netlify](https://moviemagicsearch.netlify.app/)
