@@ -7,6 +7,7 @@ Simple Movie Searching App Created In React. Uses a Movie API to Display Searche
 - Efficient Searching Pattern.
 - Card Display of Movies.
 - Responsive Design.
+- Error Handling in Case of Wrong Search Request.
 
 ### ScreenShot
 <img src="https://i.ibb.co/H4DtvCN/2.jpg" alt="screenshot" height="500">
