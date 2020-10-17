@@ -9,7 +9,7 @@ function App() {
 	const [search, setSearch] = useState('');
 	const [found, setFound] = useState(true);
 	const [query, setQuery] = useState('tom+and+jerry');
-	const API_KEY = 93773641;
+	const API_KEY = "--insert api key here--";
 
 	useEffect(() => {
 		getMovies();
