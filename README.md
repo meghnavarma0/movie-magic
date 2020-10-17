@@ -1,6 +1,7 @@
 ## Movie Magic
 
 Simple Movie Searching App Created In React. Uses a Movie API to Display Searched Movie.
+The project fetches data from 'https://www.omdbapi.com' API. The API is used to fetch data about the searched movie. The application is made on react.
 
 ### Features
 - Top Search Bar to Easily Search a Movie.
