@@ -20,3 +20,13 @@ The project fetches data from 'https://www.omdbapi.com' API. The API is used to 
 ### Usage
 - Clone this Repository <br> `git clone https://github.com/meghnavarma0/movie-magic.git`
 - Enter Directory and Run <br>`npm start` 
+- Create a new-branch and switch to it.<br> `git checkout -b "<your name>`
+- Change the add file or update the code ande save it. 
+- Check status in terminal `git status`
+- Add the files you update `git add .`
+- Commit the files `git commit -m "Add this files"`
+- push the branch  that you created  `git push origin <your name>`
+- Go to your forked repo in GitHub, and raise a pull request to this repo.
+- Once merged it should count towards your 4 PR's which you can keep track of [here](https://hacktoberfest.digitalocean.com/profile).
+
+## Happy Hacktoberfest 🎉
