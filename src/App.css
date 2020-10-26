@@ -85,3 +85,10 @@
 	transform: rotateZ(-50deg);
 	transition-delay: 0.1s;
 }
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}

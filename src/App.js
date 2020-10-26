@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Movie from './Movie';
 import NotFound from './NotFound';
+import Loading from "./Loading";
 
 import './App.css';
 
@@ -8,6 +9,7 @@ function App() {
 	const [movies, setMovies] = useState([]);
 	const [search, setSearch] = useState('');
 	const [found, setFound] = useState(true);
+	const [loading, setLoading] = useState(false);
 	const [query, setQuery] = useState('tom+and+jerry');
 	const API_KEY = "--insert api key here--";
 
@@ -16,6 +18,7 @@ function App() {
 	}, [query]);
 
 	const getMovies = async () => {
+		setLoading(true)
 		const response = await fetch(
 			`https://www.omdbapi.com/?s=${query}&apikey=${API_KEY}`
 		);
@@ -26,6 +29,7 @@ function App() {
 		} else {
 			setFound(false);
 		}
+		setLoading(false)
 		console.log(data.Search);
 	};
 	const onSearchHandler = e => {
@@ -57,7 +61,7 @@ function App() {
 				<button className='search-button'>Search</button>
 			</form>
 			<div className='Container'>
-				{movies &&
+				{movies && !loading&&
 					movies.map((movie, i) => (
 						<Movie
 							key={i}
@@ -66,7 +70,8 @@ function App() {
 							year={movie.Year}
 						/>
 					))}
-				{!found && <NotFound />}
+				{!found && !loading <NotFound />}
+				{loading&&<Loading/>}
 			</div>
 		</div>
 	);
